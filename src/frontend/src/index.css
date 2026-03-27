@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Dark-themed portfolio — primary surfaces are dark */
+    --background: 0.18 0.008 240;
+    --foreground: 0.98 0 0;
+    --card: 0.22 0.008 240;
+    --card-foreground: 0.98 0 0;
+    --popover: 0.22 0.008 240;
+    --popover-foreground: 0.98 0 0;
+    --primary: 0.75 0.12 85;
+    --primary-foreground: 0.12 0 0;
+    --secondary: 0.28 0.008 240;
+    --secondary-foreground: 0.98 0 0;
+    --muted: 0.26 0.006 240;
+    --muted-foreground: 0.6 0 0;
+    --accent: 0.75 0.12 85;
+    --accent-foreground: 0.12 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.3 0.008 240;
+    --input: 0.3 0.008 240;
+    --ring: 0.75 0.12 85;
+
+    /* Custom brand tokens */
+    --gold: 0.75 0.12 85;
+    --gold-light: 0.82 0.1 85;
+    --dark-bg: 0.18 0.008 240;
+    --dark-card: 0.22 0.008 240;
+    --dark-border: 0.3 0.008 240;
+    --section-alt: 0.95 0.006 60;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.22 0.008 240;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.75 0.12 85;
+    --sidebar-primary-foreground: 0.12 0 0;
+    --sidebar-accent: 0.28 0.008 240;
+    --sidebar-accent-foreground: 0.98 0 0;
+    --sidebar-border: 0.3 0.008 240;
+    --sidebar-ring: 0.75 0.12 85;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
